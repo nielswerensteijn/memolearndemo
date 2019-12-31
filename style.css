@@ -44,7 +44,7 @@ body{
   .panels li div{
     width: 100%;
     padding: 50% 0; 
-    border: 5px solid green;
+    border: 1px solid green;
     text-align: center;
     color: #fff;
     font-size: 1em;

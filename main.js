@@ -6873,7 +6873,16 @@ var $author$project$Main$viewCard = F3(
 				[
 					$elm$html$Html$Attributes$class('guessed')
 				]),
-			_List_Nil) : A2(
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$div,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$class('back')
+						]),
+					_List_Nil)
+				])) : A2(
 			$elm$html$Html$li,
 			_List_Nil,
 			_List_fromArray(
