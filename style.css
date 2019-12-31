@@ -1,6 +1,7 @@
 body{
     background: #333;
     font-family: verdana;
+    text-size-adjust: none;
   }
   
   .wrapper{
