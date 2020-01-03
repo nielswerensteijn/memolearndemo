@@ -22,6 +22,14 @@ body{
     padding: 0;
   }
 
+  .boxcontent{
+    position: absolute;
+    padding: 1px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
  
   .panels li{
     position: relative;
@@ -37,24 +45,16 @@ body{
     visibility: hidden;
   }
   
-  .panels li:hover {
-    transform: scale(1.1);
-  }
-
   .panels li div{
     width: 100%;
     padding: 50% 0; 
     border: 1px solid green;
-    text-align: center;
     color: #fff;
     font-size: 1em;
-    text-transform: uppercase;
-    /*letter-spacing: 2px;*/
-    line-height: 0;
     cursor: pointer;
     outline: 2px solid green;
     outline-offset: -1px;
-
+    overflow: hidden;
   }
   
     .panels li div img{
@@ -112,3 +112,10 @@ body{
       margin: 2%;
     }
   }
+
+
+@media (hover: hover) {
+  .panels li:hover {
+    transform: scale(1.1);
+  }
+}

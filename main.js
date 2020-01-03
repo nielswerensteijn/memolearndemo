@@ -6839,6 +6839,7 @@ var $author$project$Main$selectDependendAtributes = F6(
 			getSelectedClass,
 			_Utils_ap(getResultClass, getEventListener));
 	});
+var $elm$html$Html$span = _VirtualDom_node('span');
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
@@ -6853,7 +6854,16 @@ var $elm$html$Html$Attributes$src = function (url) {
 var $author$project$Main$viewCardContent = function (card) {
 	if (!card.$) {
 		var string = card.a;
-		return $elm$html$Html$text(string);
+		return A2(
+			$elm$html$Html$span,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$class('boxcontent')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text(string)
+				]));
 	} else {
 		var url = card.a;
 		return A2(
@@ -6905,7 +6915,16 @@ var $author$project$Main$viewCard = F3(
 							])),
 					_List_fromArray(
 						[
-							$elm$html$Html$text('?')
+							A2(
+							$elm$html$Html$span,
+							_List_fromArray(
+								[
+									$elm$html$Html$Attributes$class('boxcontent')
+								]),
+							_List_fromArray(
+								[
+									$elm$html$Html$text('?')
+								]))
 						])),
 					A2(
 					$elm$html$Html$div,
